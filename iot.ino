@@ -34,20 +34,7 @@ int pinValue = param.asInt();
   }
 }
 
-BLYNK_WRITE(V1)
-{
-int pinValue = param.asInt();
-  if (pinValue == 1) {
-    pixels.setPixelColor(0, 0x3333ff);
-    pixels.setPixelColor(1, 0x3333ff);
-    pixels.setPixelColor(2, 0x3333ff);
-    pixels.setPixelColor(3, 0x3333ff);
-    pixels.setPixelColor(4, 0x3366ff);
-    pixels.show();
-    pixels.show();
-
-  }
-}
+Servo x;
 
 Servo servo_5;
 BlynkTimer Timer1;
