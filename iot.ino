@@ -6,7 +6,7 @@
 #define BLYNK_AUTH_TOKEN            "9qsMEq30jIDQNn4Hcw_E6jLV55w_98_g"
 
 
-#define BLYNK_PRINT Serial
+baiki baiki
 
 
 #include <WiFi.h>
