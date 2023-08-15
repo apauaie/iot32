@@ -55,7 +55,7 @@ BlynkTimer Timer1;
 void Timer1_TimerEvent()
 {
   Blynk.virtualWrite(V20, ultrasonic(12,27));
-  Blynk.virtualWrite(V21, analogRead(39));
+  Blynk.virtualWrite(V21, analogRead(36));
   if (ultrasonic(12,27) < 10) {
     servo_5.write(90);
 
@@ -71,9 +71,8 @@ void setup() {
   Blynk.begin(auth, ssid, pass);
   pixels.begin();
 
-  pinMode(39, INPUT);
+  pinMode(36, INPUT);
   servo_5.attach(5);
-  Timer1.setInterval(300, Timer1_TimerEvent);
 
 }
 
